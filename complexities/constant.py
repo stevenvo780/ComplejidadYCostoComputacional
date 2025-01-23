@@ -1,4 +1,4 @@
-
 def compute(n):
-    """Complejidad O(1) - Tiempo Constante"""
+    """O(1) - Algoritmo de tiempo constante
+    Siempre toma el mismo tiempo sin importar el tamaño de entrada"""
     return 42
