@@ -1,63 +1,74 @@
-# Computational Complexity Visualization
+# Visualización de Complejidad Computacional
 
-This project demonstrates different computational complexity classes through practical implementation and visualization. It includes implementations of various time complexity algorithms from O(1) to O(n!) and generates a comparative graph of their execution times.
+## ¿Qué es la Complejidad Computacional?
 
-## Implemented Complexities
+La complejidad computacional es una medida que nos permite evaluar la eficiencia de un algoritmo en términos de:
+- Tiempo de ejecución (complejidad temporal)
+- Memoria utilizada (complejidad espacial)
 
-- O(1) - Constant Time
-- O(log n) - Logarithmic Time
-- O(n) - Linear Time
-- O(n log n) - Linearithmic Time
-- O(n²) - Quadratic Time
-- O(n³) - Cubic Time
-- O(2ⁿ) - Exponential Time
-- O(n!) - Factorial Time
+En este proyecto nos enfocamos en la complejidad temporal, que describe cómo crece el tiempo de ejecución de un algoritmo en relación al tamaño de entrada (n).
 
-## Requirements
+### Clases de Complejidad Implementadas
 
-- Python 3.6 or higher
-- Required packages:
+![Gráfico de Complejidades Computacionales](./complejidad_computacional.png)
+
+Como se puede observar en el gráfico, implementamos las siguientes complejidades:
+- O(1): Tiempo constante - El mejor caso
+- O(log n): Crecimiento logarítmico - Muy eficiente
+- O(n): Crecimiento lineal - Eficiente
+- O(n log n): Crecimiento lineal-logarítmico - Bastante práctico
+- O(n²): Crecimiento cuadrático - Puede ser problemático con entradas grandes
+- O(n³): Crecimiento cúbico - Problemático para entradas medianas
+- O(2ⁿ): Crecimiento exponencial - Práctico solo para entradas muy pequeñas
+- O(n!): Crecimiento factorial - El peor caso
+
+## Requisitos
+
+- Python 3.6 o superior
+- Paquetes requeridos:
   - numpy >= 1.20.0
   - matplotlib >= 3.4.0
 
-## Installation
+## Instalación
 
-1. Clone this repository:
+1. Clonar este repositorio:
 ```bash
-git clone https://github.com/yourusername/complejidadComputacional.git
-cd complejidadComputacional
+git clone https://github.com/stevenvo780/ComplejidadYCostoComputacional
+cd ComplejidadYCostoComputacional
 ```
 
-2. Create and activate a virtual environment (recommended):
+2. Crear y activar un entorno virtual (recomendado):
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+source .venv/bin/activate  # En Windows usar: .venv\Scripts\activate
 ```
 
-3. Install dependencies:
+3. Instalar dependencias:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+## Uso
 
-Run the main script:
+Ejecutar el script principal:
 ```bash
 python main.py
 ```
 
-The script will:
-1. Execute algorithms of different complexity classes
-2. Measure their execution times for various input sizes
-3. Generate a logarithmic scale plot comparing their performance
+El script realizará:
+1. La ejecución de algoritmos de diferentes clases de complejidad
+2. La medición de sus tiempos de ejecución para varios tamaños de entrada
+3. La generación de un gráfico en escala logarítmica comparando su rendimiento
 
-## How it Works
+## Funcionamiento
 
-- Each complexity class is implemented in a separate module under the `complexities/` directory
-- The main script measures execution time for each algorithm with different input sizes
-- Input sizes are adjusted automatically for more complex algorithms (exponential and factorial)
-- Results are plotted on a logarithmic scale for clear visualization
+- Cada clase de complejidad está implementada en un módulo separado bajo el directorio `complexities/`
+- El script principal mide el tiempo de ejecución de cada algoritmo con diferentes tamaños de entrada
+- Los tamaños de entrada se ajustan automáticamente para algoritmos más complejos
+- Los resultados se grafican en escala logarítmica para una visualización clara
 
-## Note
+## Nota
 
-Exponential and factorial complexities are limited to smaller input sizes due to their intensive computational nature. The program automatically adjusts the maximum input size for these algorithms to prevent excessive execution times.
+Las complejidades exponencial y factorial están limitadas a tamaños de entrada más pequeños debido a su naturaleza computacionalmente intensiva. El programa ajusta automáticamente el tamaño máximo de entrada para estos algoritmos para evitar tiempos de ejecución excesivos.
+
+## Por: Stev
