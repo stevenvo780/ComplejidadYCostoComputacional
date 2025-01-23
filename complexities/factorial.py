@@ -1,5 +1,6 @@
 def compute(n):
-    """Complejidad O(n!) - Tiempo Factorial"""
+    """O(n!) - Factorial time algorithm
+    Execution time grows factorially with input size"""
     if n <= 1:
         return 1
     total = 0

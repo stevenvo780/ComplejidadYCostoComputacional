@@ -1,6 +1,6 @@
-
 def compute(n):
-    """Complejidad O(n²) - Tiempo Cuadrático"""
+    """O(n²) - Quadratic time algorithm
+    Execution time grows quadratically with input size"""
     total = 0
     for i in range(n):
         for j in range(n):

@@ -1,6 +1,6 @@
 def compute(n):
-    """O(log n) - Algoritmo logarítmico
-    El tiempo de ejecución crece de manera logarítmica con respecto a n"""
+    """O(log n) - Logarithmic time algorithm
+    Execution time grows logarithmically with respect to n"""
     result = 0
     i = n
     while i > 0:

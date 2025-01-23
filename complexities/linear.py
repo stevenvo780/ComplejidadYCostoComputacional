@@ -1,6 +1,6 @@
 def compute(n):
-    """O(n) - Algoritmo lineal
-    El tiempo de ejecución crece proporcionalmente al tamaño de entrada"""
+    """O(n) - Linear time algorithm
+    Execution time grows proportionally to input size"""
     total = 0
     for i in range(n):
         total += i

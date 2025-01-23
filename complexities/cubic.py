@@ -1,5 +1,6 @@
 def compute(n):
-    """Complejidad O(n³) - Tiempo Cúbico"""
+    """O(n³) - Cubic time algorithm
+    Execution time grows cubically with input size"""
     total = 0
     for i in range(n):
         for j in range(n):
